@@ -34,8 +34,16 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'podTestLibrary' => ['Pod/Assets/*.png']
   }
+  s.frameworks = "CFNetwork", "CoreGraphics", "MobileCoreServices", "SystemConfiguration", "Foundation", "Security"
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  # s.dependency 'AFNetworking', '~> 3.0.4'
+  # s.dependency 'Cocoa-Touch-Barcodes', '~> 0.0.1'
+  # s.dependency 'XMLReader', '~> 0.0.2'
+  # s.dependency 'ASIHTTPRequest', '~> 1.8.2'
+  # s.dependency 'DDURLParser', '~> 0.0.1'
+  # s.dependency 'TouchJSON', '~> 1.1'
+
 end
